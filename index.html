@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" dir="rtl" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper_box">
+      <div
+        class="col-1-of-4 col_1"
+        ondragover="dragOverHandler(event)"
+        ondrop="dropHandler(event)"
+      >
+        <div class="col_heading">no status</div>
+        <div class="addbutton init-button col_item">+ Add Todo</div>
+      </div>
+      <div
+        class="col-1-of-4 col_2"
+        ondragover="dragOverHandler(event)"
+        ondrop="dropHandler(event)"
+      >
+        <div class="col_heading">not started</div>
+      </div>
+      <div
+        class="col-1-of-4 col_3"
+        ondragover="dragOverHandler(event)"
+        ondrop="dropHandler(event)"
+      >
+        <div class="col_heading">in progress</div>
+      </div>
+      <div
+        class="col-1-of-4 col_4"
+        ondragover="dragOverHandler(event)"
+        ondrop="dropHandler(event)"
+      >
+        <div class="col_heading">completed</div>
+      </div>
+    </div>
+
+    <div class="overall">
+      <div class="addbox">
+        <div class="addbox__heading">
+          <span class="addbox__heading--left">Add todo</span
+          ><span class="addbox__heading--right">X</span>
+        </div>
+        <div class="addbox__input">
+          <input type="text" name="" id="todo_input" />
+        </div>
+        <div class="addbox__button init-button">Add todo</div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
